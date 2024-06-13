@@ -1,0 +1,873 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-------------------- FONT - AWESOME --------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-------------------- FLATICON ------------------------- ------------->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"/>
+
+    <!-------------------- SWIPER CSS ------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-------------------- CSS -------------------------------------------->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body class="no-js">
+    <!-------------------- inicio do  header ------------------------------->
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <img src="news/star-outline.svg" alt=""class="img--ajuste">
+          <a href="index.html" class="logo-text">Dressing - Star</a>   
+        </div>
+
+        <div class="header__search">
+          <input type="text" placeholder="Search for items.." class="form__input"/>
+          <button class="searchh__btn">
+            <img src="assets/img/search.png" alt="">
+          </button>
+        </div>
+
+        <nav class="nav">
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li>
+                <a href="index.html" class="nav__link  active-link" > Home</a>
+              </li>
+  
+              <li>
+                <a href="shop.html" class="nav__link ">Shop</a>
+              </li>
+  
+              <li>
+                <a href="accounts.html" class="nav__link ">My accounts</a>
+              </li>
+  
+              <li>
+                <a href="login-register.html" class="nav__link ">Login</a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+      
+        <div class="header__user-action">
+          <a href="wishlist.html" class="header__action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header__action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">4</span>
+          </a>
+        </div>
+        <button class="header__btnMenu"> <i class="fas fa-bars "></i> <span class="sr-only">Menu</span></button>
+      </div>
+    </header>  
+    <!-------------------- fim do  header ---------------------------------->
+
+    <!------------------- inicio do main ----------------------------------->
+    <main class="main"> 
+
+      <!----------------- inicio do banner shop ---------------------------->
+      <section class="shop" id="shop">
+        <div class="swiper shop-slider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide swiper-slide-active " style="background:url(./assets/img/roupas/fundo_shop_00.jpg) no-repeat;">
+              <div class="content">
+                <h3>Here we find what we need</h3>
+                <a href="#" class="btn"> get started</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide swiper-slide-active " style="background:url(./assets/img/roupas/fundo_shop_02.jpg) no-repeat;">
+              <div class="content">
+                <h3>Here we find what we need</h3>
+                <a href="#" class="btn"> get started</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide swiper-slide-active " style="background:url(./assets/img/roupas/fundo_shop_03.jpeg) no-repeat; object-fit:cover;">
+              <div class="content">
+                <h3>Here we find what we need</h3>
+                <a href="#" class="btn"> get started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next">
+            <img src="news/angle-small-right (1).png" alt="">
+          </div>
+          <div class="swiper-button-prev">
+            <img src="news/angle-small-left.png" alt="">
+          </div>
+
+        </div>
+
+      </section>
+      <!----------------- fim do banner shop ------------------------------->
+     
+
+      <!------------------ inicio products --------------------------------->
+      <section class="products section container">
+        <div class="tab__btns">
+          <span class="tab__btn  tab_btn--all" data-target="#all">All Products</span>
+        </div>
+        <div class="tab__items">
+          <div class="tab__item active-tab" content id="all"></div>
+            <div class="products__container grid">
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/camisa-01.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/camisa-01.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/jaqueta-10.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/jaqueta-10.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Clolorful Pattern Shirts</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-04.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/polo-04.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/camisa-02.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/camisa-02.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/jaqueta-11.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View"onclick="changeImage('assets/img/roupas/jaqueta-11.jpg')" >
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-05.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/polo-05.jpg')" >
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-06.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/camisa-03.jpg')" >
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-07.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/polo-07.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-13.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/jaqueta-11.jpg')" >
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-05.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/polo-05.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/camisa-01.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/camisa-03.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/jaqueta-12.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/jaqueta-12.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/jaqueta-10.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/jaqueta-10.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-07.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/camisa-03.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-13.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/polo-12.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="product__item">
+                <div class="products_banner">
+                  <a href="#" class="product__imges">
+                    <img src="assets/img/roupas/polo-08.jpg" alt="" class="product__img default">
+                  </a>
+
+                  <div class="product__actions">
+                    <a href="details.html" class="action_btn" aria-label="Quick View" onclick="changeImage('assets/img/roupas/polo-08.jpg')">
+                      <img src="news/eye.png" alt=""class="img--ajuste">
+                    </a>
+                    <a href="#" class="action_btn" aria-label="Add to wishlist">
+                      <img src="news/heart.png" alt=""class="img--ajuste">
+                    </a>
+                  </div>
+
+                  <div class="product__badge light--pink">-30%</div>
+                </div>
+
+                <div class="product__content">
+                  <a href="#">
+                    <h3 class="product__title"> Comfortable Clothes</h3>
+                  </a>
+                  <div class="product__rating">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste">
+                    <img src="news/star-outline.svg" alt=""class="img--ajuste"> 
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">$134.87</span>
+                    <span class="old__price">$156.92</span>
+                  </div>
+
+                  <a href="#" class="action_btn cart__btn" aria-label="Add To Cart">
+                    <img src="assets/img/icon-cart.svg" alt=""class="img--ajuste img--cart">
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------ fim products ------------------------------------>
+
+      <!----------------- inicio Paginação --------------------------------->
+      <ul class="pagination">
+        <li><a href="#" class="pagination__link active">01</a></li>
+        <li><a href="#" class="pagination__link ">02</a></li>
+        <li><a href="#" class="pagination__link ">03</a></li>
+        <li><a href="#" class="pagination__link ">...</a></li>
+        <li><a href="#" class="pagination__link ">16</a></li>
+        <li><a href="#" class="pagination__link ">
+          <i class="fi-rs-angle-double-small-right"></i> </a>
+        </li>
+      </ul>
+      <!----------------- fim Paginação ------------------------------------>
+
+      <!----------------- inicio do newsletter ----------------------------->
+      <section class="newsletter">
+        <h2>Subscribe to Newsletter</h2>
+        <div class="box">
+          <input type="text" placeholder="Enter Your Email..">
+          <a href="#" class="btn">Subscribe</a>
+        </div>
+      </section>
+      <!----------------- fim do newsletter -------------------------------->
+    </main>
+    <!------------------- fim do main -------------------------------------->
+
+    <!------------------- inicio do footer --------------------------------->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>address</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+    
+        <div class="box">
+          <h3>E-mail</h3>
+          <a href="#" class="link"> almistar@gmail.com</a>
+          <a href="#" class="link"> valdobm@gmail.com</a>
+        </div>
+    
+        <div class="box">
+          <h3>call us</h3>
+          <p>+51 (9) 2841 1890</p>
+          <p>+51 (9) 2841 1891</p>
+        </div>
+    
+        <div class="box">
+          <h3>opening hours</h3>
+          <p> Monday - friday 9:00 - 23:00 <br> Saturday 8:00 -24:00</p>
+        </div>
+      </div>
+    
+      <div class="credit"> created by almir star</div>
+    
+    </section>
+    <!------------------- fim do footer ------------------------------------>
+    <!------------------- SWIPER JS ---------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!------------------- MAIN JS ------------------------------------------>
+    <script src="assets/js/detalhes.js"></script>
+    <script src="assets/js/carrossel.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-------------------- FONT - AWESOME --------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-------------------- FLATICON ------------------------- ------------->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"/>
+
+    <!-------------------- SWIPER CSS ------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-------------------- CSS -------------------------------------------->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body class="no-js">
+    <!-------------------- inicio do  header ------------------------------->
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <img src="news/star-outline.svg" alt=""class="img--ajuste">
+          <a href="index.html" class="logo-text">Dressing - Star</a>   
+        </div>
+
+        <div class="header__search">
+          <input type="text" placeholder="Search for items.." class="form__input"/>
+          <button class="searchh__btn">
+            <img src="assets/img/search.png" alt="">
+          </button>
+        </div>
+
+        <nav class="nav">
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li>
+                <a href="index.html" class="nav__link  active-link" > Home</a>
+              </li>
+  
+              <li>
+                <a href="shop.html" class="nav__link ">Shop</a>
+              </li>
+  
+              <li>
+                <a href="accounts.html" class="nav__link ">My accounts</a>
+              </li>
+  
+              <li>
+                <a href="login-register.html" class="nav__link ">Login</a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+      
+        <div class="header__user-action">
+          <a href="wishlist.html" class="header__action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header__action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">4</span>
+          </a>
+        </div>
+        <button class="header__btnMenu"> <i class="fas fa-bars "></i> <span class="sr-only">Menu</span></button>
+      </div>
+    </header>  
+    <!-------------------- fim do  header ---------------------------------->
+
+    <!------------------- inicio do main ----------------------------------->
+    <main class="main">
+
+      <!----------------- inicio accounts ---------------------------------->
+      <section class="accounts section--lg">
+        <div class="accounts__container ">
+          <div class="tab__orders">
+            <button class="btn--accounts" id="orders" >
+              <i class="fi fi-rs-shopping-bag-add"></i> Orders
+            </button>
+            <div class="tab__orders__content" >
+              <div class="tab_body">
+                <table class="placed__order-table">
+                  <tr>
+                    <th>Orders</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                    <th>actions</th>
+                  </tr>
+  
+                  <tr>
+                    <th>#245</th>
+                    <td>January 2014</td>
+                    <td>Completed</td>
+                    <td>$297.00</td>
+                    <td><a href="#" class="view__order">View</a></td>
+                  </tr>
+  
+                  <tr>
+                    <th>#225</th>
+                    <td>April 2014</td>
+                    <td>Completed</td>
+                    <td>$123.00</td>
+                    <td><a href="#" class="view__order">View</a></td>
+                  </tr>
+  
+                  <tr>
+                    <th>#134</th>
+                    <td>May 2014</td>
+                    <td>Processing</td>
+                    <td>$345.00</td>
+                    <td><a href="#" class="view__order">View</a></td>
+                  </tr>
+  
+                  <tr>
+                    <th>#234</th>
+                    <td>July 2014</td>
+                    <td>Processing</td>
+                    <td>$98.00</td>
+                    <td><a href="#" class="view__order">View</a></td>
+                  </tr>
+  
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__update__profile">
+            <button class="btn--accounts" id="update-profile">
+              <i class="fi fi-rs-user"></i> Update Profile
+            </button>
+            <div class="tab__profile__content" >  
+              <div class="tab_body">
+                <form action=" ">
+                  <input type="text" placeholder="Username" class="form__input" >
+                  <div class="form__btn">
+                    <button class="btn btn--md">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__address">
+            <button class="btn--accounts" id="address">
+              <i class="fi fi-rs-marker"></i> My Address
+            </button>
+            <div class="tab__address__content ">
+              <div class="tab_body">
+                <address class="address">
+                  654 Cazenga <br>
+                  86 Zona 18 <br>
+                  hoji-henda 54
+                </address>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__password">
+            <button class="btn--accounts" id="password">
+              <i class="fi fi-rs-user"></i> Change Password
+            </button>
+            <div class="tab__password__content "  id="change-password">
+              <div class="tab_body">
+                <form action=" " >
+                  <input type="password" placeholder="Current Password" class="form__input">
+
+                  <input type="password" placeholder="New Password" class="form__input">
+
+                  <input type="password" placeholder="Confirm Password" class="form__input">
+                  
+                  <div class="form__btn">
+                    <button class="btn btn--md">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__logout ">
+            <button class="btn--accounts">
+              <i class="fi fi-rs-exit"></i> Logout
+            </button>
+          </div>
+        </div>
+
+      </section>
+      <!----------------- fim accounts ------------------------------------->
+
+      <!-----------------  inicio newsletter ------------------------------->
+      <section class="newsletter">
+        <h2>Subscribe to Newsletter</h2>
+        <div class="box">
+          <input type="text" placeholder="Enter Your Email..">
+          <a href="#" class="btn">Subscribe</a>
+        </div>
+      </section>
+      <!-----------------  fim newsletter ---------------------------------->
+    </main>
+    <!------------------- fim do  main ------------------------------------->
+
+    <!------------------- inicio do footer --------------------------------->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>address</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+    
+        <div class="box">
+          <h3>E-mail</h3>
+          <a href="#" class="link"> almistar@gmail.com</a>
+          <a href="#" class="link"> valdobm@gmail.com</a>
+        </div>
+    
+        <div class="box">
+          <h3>call us</h3>
+          <p>+51 (9) 2841 1890</p>
+          <p>+51 (9) 2841 1891</p>
+        </div>
+    
+        <div class="box">
+          <h3>opening hours</h3>
+          <p> Monday - friday 9:00 - 23:00 <br> Saturday 8:00 -24:00</p>
+        </div>
+      </div>
+    
+      <div class="credit"> created by almir star</div>
+    
+    </section>
+    <!------------------- fim do footer ------------------------------------>
+
+    <!-------------------- SWIPER JS --------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-------------------- MAIN JS ----------------------------------------->
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
